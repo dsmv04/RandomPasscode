@@ -1,0 +1,10 @@
+﻿@model RandomPasscode.Models.PasscodeViewModel
+@{
+    ViewData["Title"] = "Random Passcode Generator";
+}
+
+<div>
+    <h1>Código de acceso aleatorio nº @Model.CodeCount</h1>
+    <p>Código de acceso aleatorio: @Model.RandomCode</p>
+    <a asp-action="Index">Generar otro código de acceso aleatorio</a>
+</div>
